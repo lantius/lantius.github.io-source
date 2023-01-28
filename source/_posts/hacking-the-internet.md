@@ -30,7 +30,7 @@ function verifyCaptchas() {
   var rows = sheet.getDataRange();
   var numRows = rows.getNumRows();
   var values = rows.getValues();
- 
+
   var toDelete = [];
   for (var i = 1; i <= numRows - 1; i++) {
     var recaptcha = values[i][RECAPTCHA_COLUMN_];
@@ -65,7 +65,7 @@ Now we can go to our Script Manager and execute this script to clean up all our 
 
 (If I'd noticed this earlier, I'd probably have written the script to validate one form submission at a time, but since it was already working I decided it was probably fine to re-execute across the whole form for every submission - we don't ever expect to have that many entries in total.)
 
-With the installable trigger set to run on every submission, this now works like a champ. New entries appear in the sheet and are swiftly validated or deleted. 
+With the installable trigger set to run on every submission, this now works like a champ. New entries appear in the sheet and are swiftly validated or deleted.
 
 ### The Last Word
 
