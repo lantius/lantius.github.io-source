@@ -1,8 +1,7 @@
 # Header
 menu:
-  Home: /
 rss: /atom.xml
-banner: images/banner.jpg
+banner: /images/banner.jpg
 
 # Content
 excerpt_link: Read More
